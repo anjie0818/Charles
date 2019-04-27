@@ -86,8 +86,16 @@ Charles的Map功能可以将某个请求进行重定向，用重定向的内容�
 ## rewrite功能
 Rewrite 功能适合对某一类网络请求进行一些正则替换，以达到修改结果的目的。
 ## Breakpoints功能
+Breakpoint :打断点
+它的作用：在抓包工具Charles里可以通过Breakpoint 打断点来修改Response数据。
 ## Compose功能
+Compose功能可以在原有的请求基础上进行修改。   
+使用场景：在进行接口测试时，临时修改请求参数、参数值或者header等等。
 ## 服务器压力测试
+使用 Charles 的 Repeat 功能来简单地测试服务器的并发处理能力，方法：   
+1)在想打压的网络请求上右击，然后选择 「Repeat Advanced」   
+2)可以在弹出的对话框中，选择打压的并发线程数以及打压次数，确定之后，即可开始打压。    
+
 
 
 
