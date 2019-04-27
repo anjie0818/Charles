@@ -67,6 +67,27 @@ PC端常用网络封包截取工具，是一个同fiddler同类型的http抓包�
 * Releability —— 指连接的可靠性。这里指的是10kb的可靠率。用于模拟网络不稳定。
 * Stability —— 连接稳定性，也会影响带宽可用性。用于模拟移动网络，移动网络连接一般不可靠
 ![](./images/网络测试.png)
+## 过滤网络请求
+Charles过滤网络有三种方式：
+* 【临时性过滤】在主界面的 Filter 栏中输入需要过滤出来的关键字。   
+* 【经常性顾虑】在菜单栏选择 “Proxy”->”Recording Settings”，在弹出的窗口中选择 Include 栏，再点击“Add”，在弹出的窗口中输入需要监控的协议，主机地址，端口号等信息，来添加一个项目。
+* 【临时性+快速性过滤】在想过滤的网络请求上点击右键，选择 “Focus”，之后在 Filter 一栏勾选上 Focussed
+## Map重定向
+### 功能点：
+Charles的Map功能可以将某个请求进行重定向，用重定向的内容响应请求的内容；
+使用通配符，批量匹配      
+重定向的方式可以分为两种：Map Local和Map Remote。   
+### 分类
+* Map Local：将某个网络请求重定向到本地某个文件
+    * 设置 Map Local：请求右键直接设置
+    * 取消 Map Local：Tool->Map Local
+* Map Remote：将某个网络请求重定向到另一个网络请求
+![](./images/map.png)
+## rewrite功能
+Rewrite 功能适合对某一类网络请求进行一些正则替换，以达到修改结果的目的。
+## Breakpoints功能
+## Compose功能
+## 服务器压力测试
 
 
 
